@@ -1,0 +1,74 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "User Service API",
+        "description": "Documentation for the User Service API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/api/users": {
+            "get": {
+                "summary": "Display a listing of the resource.",
+                "operationId": "566aed8efb436ca506e0ef51a032ecd9",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Store a newly created resource in storage.",
+                "operationId": "be551c1d694a01c164966f58bfa77013",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        },
+        "/api/users/{id}": {
+            "get": {
+                "summary": "Display the specified resource.",
+                "operationId": "6f51bd5fa2dddcd25e44cfa53dcbd10a",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Remove the specified resource from storage.",
+                "operationId": "0b4133ed462528a5e648b88ead11e929",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            },
+            "patch": {
+                "summary": "Update the specified resource in storage.",
+                "operationId": "ec1a01d2866589706335eebfd122b258",
+                "responses": {
+                    "200": {
+                        "description": "Success"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    }
+                }
+            }
+        }
+    }
+}
